@@ -3,6 +3,9 @@ import Sidebar from './Sidebar';
 import './StudentDashboard.css'
 import progBar from '../assets/images/progress-bar.png'
 import hrLine from '../assets/images/hr-line.png'
+import singlePerson from '../assets/images/single-person.png'
+import gather from '../assets/icons/gather.svg'
+import dropDown from '../assets/icons/black-drop-down.svg'
 
 const StudentDashboard = () => {
 
@@ -47,7 +50,7 @@ const StudentDashboard = () => {
                                             <p>Profile eveluations report</p>
                                             <span>10 recommendations based on your profile evaluation</span>
                                             <div className="down-ar">
-                                                <img src="" alt="" />
+                                                <img src={dropDown} alt="drop-down-icon" />
                                             </div>
                                         </div>
                                     </div>
@@ -56,7 +59,7 @@ const StudentDashboard = () => {
                                             <p>Your Applications</p>
                                             <span>0 application</span>
                                             <div className="down-ar">
-                                                <img src="" alt="" />
+                                                <img src={dropDown} alt="drop-down-icon" />
                                             </div>
                                         </div>
                                     </div>
@@ -65,7 +68,7 @@ const StudentDashboard = () => {
                                             <p>Shortlist your universities</p>
                                             <span>0 application</span>
                                             <div className="down-ar">
-                                                <img src="" alt="" />
+                                                <img src={dropDown} alt="drop-down-icon" />
                                             </div>
                                         </div>
                                     </div>
@@ -74,9 +77,40 @@ const StudentDashboard = () => {
                                 <button className="eligible">Check Eligibility</button>
                             </div>
                         </div>
-                        <div className="top-right"></div>
+                        <div className="top-right">
+                            <div className="top-right-wrapper">
+                                <div className="above">
+                                    <p>Want help to get started</p>
+                                    <div>Verify your account and connect with an Expert</div><br/>
+                                    <button>Connect with an Expert</button>
+                                </div>
+                                <div className="below">
+                                    <br />
+                                    <div className="gather">
+                                        <img src={gather} alt="gather" />
+                                    </div>
+                                    <p>Join our live webinar section to guide you on your application process</p>
+                                    <button>Get Connected</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div style={{border: '3px solid brown'}} className="bottom-content"><h1>HELLOO</h1></div>
+                    <div className="bottom-content">
+                        <div className="document"><span>Document Section</span></div>
+                        <div className="below-doc">
+                            <div className="below-doc-left">
+                                <p>Keep track of all your documents needed for application</p>
+                                <p>We accept document of all kind</p>
+                                <button>Upload Document</button>
+                                <p className='please'>Please upload your documents if you have not done so</p>
+                            </div>
+                            <div className="below-doc-right">
+                                <div className="single-person">
+                                    <img src={singlePerson} alt="single-person" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>

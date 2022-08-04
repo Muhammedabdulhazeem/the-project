@@ -20,14 +20,27 @@
     column-gap: 20px;
 }
 
-.bell-icon, .cj-icon, .drp-dwn {
+.bell-icon {
     height: 20px;
     width: 20px;
+}
+
+.cj-icon {
+    height: 25px;
+    width: 25px;
+    text-align: center;
     background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
 }
 
 .nav-dash .drp-dwn {
     margin-right: 25px;
+    height: 15px;
+    width: 15px;
 }
 
 

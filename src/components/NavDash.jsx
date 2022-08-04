@@ -1,4 +1,7 @@
 import './NavDash.css'
+import bellIcon from '../assets/icons/bell-icon.svg'
+import downIcon from '../assets/icons/drop-down-icon.svg'
+
 
 const NavDash = () => {
 
@@ -6,14 +9,12 @@ const NavDash = () => {
         <div className="nav-dash">
             <div className="nav-wrapper">
                 <div className="bell-icon">
-                    <img src="" alt="" />
+                    <img src={bellIcon} alt="bell-icon" />
                 </div>
-                <div className="cj-icon">
-                    <img src="" alt="" />
-                </div>
+                <div className="cj-icon"><span>cj</span></div>
                 <span>Clara John</span>
                 <div className="drp-dwn">
-                    <img src="" alt="" />
+                    <img src={downIcon} alt="down arror" />
                 </div>
             </div>
         </div>
