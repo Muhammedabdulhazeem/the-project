@@ -1,0 +1,207 @@
+.signup {
+    width: 100%;
+    height: 100%;
+    background-color: #0D2C58;
+    display: flex;
+    overflow: hidden;
+}
+
+
+.signup img {
+    height: 100%;
+    width: 100%;
+}
+
+.signup .s-img {
+    height: 100%;
+    width: 65%;
+}
+
+.s-content {
+    width: 35%;
+    height: 100%;
+}
+
+.s-content-wrapper {
+    height: 100%;
+    padding-left: 40px;
+}
+
+
+.ol-head {
+    height: 60px;
+    color: white;
+    margin: 15px 0 15px 35px;
+    display: flex;
+    align-items: center;
+}
+
+.ol-head h1 {
+    margin-left: 15px;
+}
+
+.of-logo {
+    height: 100%;
+    width: 50px;
+}
+
+.lo-sg {
+    display: flex;
+    gap: 15px;
+    font-size: x-small;
+    margin: 0 0 15px 90px;
+    color: #fff;
+}
+
+.lo-sg span {
+    cursor: pointer;
+}
+
+.form-img {
+    width: 65%;
+    position: relative;
+    top: -15px;
+    height: 79%;
+    left: -5px;
+}
+
+.is-login {
+    transform: translateX(43px);
+}
+
+.form-div {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0 auto;
+    width: 80%;
+    height: 80%;
+}
+
+.form-div input {
+    width: 98%;
+    margin-top: 10px;
+    height: 30px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid #8696AC;
+}
+
+.phone-no {
+    width: 100%;
+    height: 32px;
+    margin-top: 10px;
+    border: 1px solid #8696AC;
+    border-radius: 5px;
+}
+
+.form-div button {
+    width: 100%;
+    height: 32px;
+    border-radius: 5px;
+    background-color: #0D2C58;
+    margin-top: 10px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.form-div p {
+    margin: 10px 0 0 0;
+    padding: 0;
+}
+
+.or {
+    display: flex;
+    margin: 7px 0 0; 
+    justify-content: center;
+    align-items: center;  
+    width: 100%;
+    gap: 10px;
+}
+
+.or .h-line img {
+    height: auto;
+}
+
+.or .h-line {
+    width: 25px;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+}
+
+.sign-in-opts {
+    display: flex;
+    width: 100%;
+    height: 32px;
+    color: #fff;
+    margin-top: 10px;
+    background-color: #8696AC;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.sign-in-opts span {
+    margin-right: auto;
+    margin-left: 20px;
+    font-size: smaller;
+}
+
+.icon-div {
+    height: 30px;
+    width: 30px;
+    margin-right: 1px;
+    display: flex;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+}
+
+.icon-div .icon-img {
+    height: 20px;
+    width: 20px;
+}
+
+.opts-wrapper {
+    position: relative;
+}
+
+.agreement {
+    display: grid;
+    width: 100%;
+    font-size: x-small;
+    margin-top: 8px;
+    grid-template-columns: 10% 90%;
+}
+
+.agreement input {
+    margin-top: 0;
+    height: 15px;
+    width: 15px;
+}
+
+.agreement p {
+    margin: -3px 0 0 0;
+}
+
+.agreement span {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.switch {
+    font-size: smaller;
+    text-align: center;
+    position: relative;
+    top: 15px;
+}
+
+.switch span {
+    cursor: pointer;
+    color: #0D2C58;
+}
+

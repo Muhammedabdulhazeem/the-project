@@ -1,0 +1,33 @@
+.nav-dash {
+    width: 87%;
+    height: 55px;
+    margin-left: 13%;
+    background-color: #0D2C58;
+    color: #fff;
+    position: fixed;
+    display: flex;
+}
+
+.nav-dash img {
+    height: 100%;
+    width: 100%;
+}
+
+.nav-wrapper {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+}
+
+.bell-icon, .cj-icon, .drp-dwn {
+    height: 20px;
+    width: 20px;
+    background-color: #fff;
+}
+
+.nav-dash .drp-dwn {
+    margin-right: 25px;
+}
+
+

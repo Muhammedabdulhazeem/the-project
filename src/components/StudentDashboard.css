@@ -1,0 +1,223 @@
+.student-dash {
+    /* height: 100%; */
+    /* overflow: hidden; */
+}
+
+.student-dash img {
+    height: 100%;
+    width: 100%;
+}
+
+.student-dash .main-content {
+    padding-top: 55px;
+    width: 87%;
+    margin-left: 13%;
+    /* height: 100%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: wheat;
+}
+
+.main-content p, span, h1 {
+    margin: 0;
+    padding: 0;
+}
+
+.content-wrapper {
+    /* height: 80%; */
+    margin-top: 97px;
+    width: 90%;
+    border: 1px solid black;
+    display: grid;
+    /* grid-template-rows: 60% 40%; */
+}
+
+.top-content {
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+
+
+.top-content .top-right {
+    border: 1px solid red;
+}
+
+/* Top left content */
+.top-content .top-left {
+    border: 1px solid blue
+}
+
+
+
+.prof-content {
+    width: 100%;
+    border: 1px solid black;
+    margin-bottom: 52px;
+    background-color: #EFF8FF;
+    border-radius: 9.26708px;
+    /* width: 746px; */
+    /* height: 257px; */
+}
+
+.prof-cont-wrapper {
+    width: 94%;
+    margin: 0 auto;
+    border: 1px solid peru;
+}
+
+.prof-cont-wrapper p {
+    margin-bottom: 22px;
+    /* width: 517px; */
+    height: 16px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.prof-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-top: 14px;
+}
+
+.prof-nav button {
+    width: 153px;
+    height: 33px;
+    border: 1px solid #FF0000;
+    color: #FF0000;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    background-color: #EFF8FF;
+}
+
+.prof-nav button:last-child {
+    background-color: #21B573;
+    border: none;
+    color: #fff;
+}
+
+.prof-div h1 {
+    /* width: 201px; */
+    height: 24px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 24px;
+}
+
+.prof-div .prog-bar {
+    height: 40px;
+    width: 40px;
+    background-color: #fff;
+}
+
+.prof-nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 18px;
+}
+
+.prof-hr-line {
+    margin-bottom: 30px;
+    width: 100%;
+    height: 1px;
+    margin-top: 0;
+}
+
+.prof-content .complete {
+    margin-bottom: 15px;
+    width: 223px;
+    height: 50px;
+    background: #21B573;
+    border-radius: 10px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #fff;
+    border: none;
+}
+
+.eval-wrapper {
+    width: 100%;
+    /* box-sizing: border-box; */
+}
+
+.eval-wrapper .eval-contain {
+    width: 100%;
+    /* box-sizing: border-box; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    border: 1px solid green;
+    height: 47px;
+    background: #F8FCFF;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+
+.eval-wrapper .eval-contain .eval {
+   width: 90%;
+   margin: auto;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+
+
+
+}
+
+.eval-wrapper .eval p {
+    width: 185px;
+    height: 19px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    /* margin-left: 25px; */
+}
+
+.eval-wrapper .eval span {
+    height: 16px;
+    background-color: rgba(0, 0, 0, 0.07);
+    color: black;
+    height: 12px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 12px;
+    padding: 2px 10px;
+}
+
+/* .eval-wrapper .eval .down-ar {
+    margin-right: 17px;
+} */
+
+.top-left-wrapper .eligible {
+    width: 223px;
+    height: 50px;
+    background: #0D2C58;
+    border-radius: 10px;
+    border: none;
+    margin-top: 34px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+}
