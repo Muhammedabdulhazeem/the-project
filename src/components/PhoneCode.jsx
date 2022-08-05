@@ -4,7 +4,7 @@ import './PhoneCode.css'
 const PhoneCode = ({setPhone}) => {
     const [phoneCode, setPhoneCode] = useState('')
     const [number, setNumber] = useState('')
-    const [dbLetter, setDbLetter] = useState('')
+    const [dbLetter, setDbLetter] = useState('af')
 
     const handleChange = (e) => {
         setPhoneCode(e.target.value)
