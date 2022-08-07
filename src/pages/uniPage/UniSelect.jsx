@@ -1,8 +1,18 @@
 import './UniSelect.css'
 import pointer from '../../assets/images/pointer.png'
 import uniImg from '../../assets/images/uni-img.png'
+import { useState } from 'react'
 
 const UniSelect = () => {
+    const [onApply, setOnApply] = useState(false)
+
+    const handleApply = () => {
+        setOnApply(true)
+    }
+
+    const handleComplete = () => {
+        setOnApply(false)
+    }
 
     return (
         <div className="uni-select-wrap">
@@ -10,205 +20,173 @@ const UniSelect = () => {
                 <img src={pointer} alt="pointer" />
             </div>
 
-            <div className="uni-opts-wrap">
-                <div className="uni-opt">
-                    <div className="uni-img">
-                        <img src={uniImg} alt="university image" />                      
-                    </div>
+            <div className="uni-opts-cover">
+                <div className="uni-opts-wrap">
+                    {onApply && (<div className="pls-complete">
+                        <div className="eager">
+                            <h2>We know you're eager to start your career</h2>
+                            <p>Please complete your profile to start your</p>
+                            <p>dream career</p>
 
-                    <div className="uni-side">
-                        <h1>The Australian National University (ANU)</h1>
-                        <p>Canberra, Autralian Capital Territory</p>
-                        <div className="apply">
-                            <button>Apply</button>
-                            <span>View All Programs</span>
+                            <button onClick={handleComplete}>Complete Profile</button>
+                        </div>
+                    </div>)}
+                    <div className="uni-opt">
+                        <div className="uni-img">
+                            <img src={uniImg} alt="university" />                      
+                        </div>
+
+                        <div className="uni-side">
+                            <h1>The Nigerian National University (ANU)</h1>
+                            <p>Canberra, Autralian Capital Territory</p>
+                            <div className="apply">
+                                <button onClick={handleApply}>Apply</button>
+                                <span>View All Programs</span>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div className="uni-opt">
-                    <div className="uni-img">
-                        <img src={uniImg} alt="university image" />                      
-                    </div>
+                    <div className="uni-opt">
+                        <div className="uni-img">
+                            <img src={uniImg} alt="university" />                      
+                        </div>
 
-                    <div className="uni-side">
-                        <h1>The Australian National University (ANU)</h1>
-                        <p>Canberra, Autralian Capital Territory</p>
-                        <div className="apply">
-                            <button>Apply</button>
-                            <span>View All Programs</span>
+                        <div className="uni-side">
+                            <h1>The Australian National University (ANU)</h1>
+                            <p>Canberra, Autralian Capital Territory</p>
+                            <div className="apply">
+                                <button onClick={handleApply}>Apply</button>
+                                <span>View All Programs</span>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div className="uni-opt">
-                    <div className="uni-img">
-                        <img src={uniImg} alt="university image" />                      
-                    </div>
+                    <div className="uni-opt">
+                        <div className="uni-img">
+                            <img src={uniImg} alt="university" />                      
+                        </div>
 
-                    <div className="uni-side">
-                        <h1>The Australian National University (ANU)</h1>
-                        <p>Canberra, Autralian Capital Territory</p>
-                        <div className="apply">
-                            <button>Apply</button>
-                            <span>View All Programs</span>
+                        <div className="uni-side">
+                            <h1>The Australian National University (ANU)</h1>
+                            <p>Canberra, Autralian Capital Territory</p>
+                            <div className="apply">
+                                <button onClick={handleApply}>Apply</button>
+                                <span>View All Programs</span>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div className="uni-opt">
-                    <div className="uni-img">
-                        <img src={uniImg} alt="university image" />                      
-                    </div>
+                    <div className="uni-opt">
+                        <div className="uni-img">
+                            <img src={uniImg} alt="university" />                      
+                        </div>
 
-                    <div className="uni-side">
-                        <h1>The Australian National University (ANU)</h1>
-                        <p>Canberra, Autralian Capital Territory</p>
-                        <div className="apply">
-                            <button>Apply</button>
-                            <span>View All Programs</span>
+                        <div className="uni-side">
+                            <h1>The Australian National University (ANU)</h1>
+                            <p>Canberra, Autralian Capital Territory</p>
+                            <div className="apply">
+                                <button onClick={handleApply}>Apply</button>
+                                <span>View All Programs</span>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div className="uni-opt">
-                    <div className="uni-img">
-                        <img src={uniImg} alt="university image" />                      
-                    </div>
+                    <div className="uni-opt">
+                        <div className="uni-img">
+                            <img src={uniImg} alt="university" />                      
+                        </div>
 
-                    <div className="uni-side">
-                        <h1>The Australian National University (ANU)</h1>
-                        <p>Canberra, Autralian Capital Territory</p>
-                        <div className="apply">
-                            <button>Apply</button>
-                            <span>View All Programs</span>
+                        <div className="uni-side">
+                            <h1>The Australian National University (ANU)</h1>
+                            <p>Canberra, Autralian Capital Territory</p>
+                            <div className="apply">
+                                <button onClick={handleApply}>Apply</button>
+                                <span>View All Programs</span>
+                            </div>
+                        </div>
+                    </div><div className="uni-opt">
+                        <div className="uni-img">
+                            <img src={uniImg} alt="university" />                      
+                        </div>
+
+                        <div className="uni-side">
+                            <h1>The Australian National University (ANU)</h1>
+                            <p>Canberra, Autralian Capital Territory</p>
+                            <div className="apply">
+                                <button onClick={handleApply}>Apply</button>
+                                <span>View All Programs</span>
+                            </div>
+                        </div>
+                    </div><div className="uni-opt">
+                        <div className="uni-img">
+                            <img src={uniImg} alt="university" />                      
+                        </div>
+
+                        <div className="uni-side">
+                            <h1>The Australian National University (ANU)</h1>
+                            <p>Canberra, Autralian Capital Territory</p>
+                            <div className="apply">
+                                <button onClick={handleApply}>Apply</button>
+                                <span>View All Programs</span>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div className="uni-opt">
-                    <div className="uni-img">
-                        <img src={uniImg} alt="university image" />                      
-                    </div>
+                    <div className="uni-opt">
+                        <div className="uni-img">
+                            <img src={uniImg} alt="university" />                      
+                        </div>
 
-                    <div className="uni-side">
-                        <h1>The Australian National University (ANU)</h1>
-                        <p>Canberra, Autralian Capital Territory</p>
-                        <div className="apply">
-                            <button>Apply</button>
-                            <span>View All Programs</span>
+                        <div className="uni-side">
+                            <h1>The Australian National University (ANU)</h1>
+                            <p>Canberra, Autralian Capital Territory</p>
+                            <div className="apply">
+                                <button onClick={handleApply}>Apply</button>
+                                <span>View All Programs</span>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div className="uni-opt">
-                    <div className="uni-img">
-                        <img src={uniImg} alt="university image" />                      
-                    </div>
+                    <div className="uni-opt">
+                        <div className="uni-img">
+                            <img src={uniImg} alt="university" />                      
+                        </div>
 
-                    <div className="uni-side">
-                        <h1>The Australian National University (ANU)</h1>
-                        <p>Canberra, Autralian Capital Territory</p>
-                        <div className="apply">
-                            <button>Apply</button>
-                            <span>View All Programs</span>
+                        <div className="uni-side">
+                            <h1>The Australian National University (ANU)</h1>
+                            <p>Canberra, Autralian Capital Territory</p>
+                            <div className="apply">
+                                <button onClick={handleApply}>Apply</button>
+                                <span>View All Programs</span>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div className="uni-opt">
-                    <div className="uni-img">
-                        <img src={uniImg} alt="university image" />                      
-                    </div>
+                    <div className="uni-opt">
+                        <div className="uni-img">
+                            <img src={uniImg} alt="university" />                      
+                        </div>
 
-                    <div className="uni-side">
-                        <h1>The Australian National University (ANU)</h1>
-                        <p>Canberra, Autralian Capital Territory</p>
-                        <div className="apply">
-                            <button>Apply</button>
-                            <span>View All Programs</span>
+                        <div className="uni-side">
+                            <h1>The Australian National University (ANU)</h1>
+                            <p>Canberra, Autralian Capital Territory</p>
+                            <div className="apply">
+                                <button onClick={handleApply}>Apply</button>
+                                <span>View All Programs</span>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div className="uni-opt">
-                    <div className="uni-img">
-                        <img src={uniImg} alt="university image" />                      
-                    </div>
+                    <div className="uni-opt">
+                        <div className="uni-img">
+                            <img src={uniImg} alt="university" />                      
+                        </div>
 
-                    <div className="uni-side">
-                        <h1>The Australian National University (ANU)</h1>
-                        <p>Canberra, Autralian Capital Territory</p>
-                        <div className="apply">
-                            <button>Apply</button>
-                            <span>View All Programs</span>
+                        <div className="uni-side">
+                            <h1>The Australian National University (ANU)</h1>
+                            <p>Canberra, Autralian Capital Territory</p>
+                            <div className="apply">
+                                <button onClick={handleApply}>Apply</button>
+                                <span>View All Programs</span>
+                            </div>
                         </div>
                     </div>
+                    
+
+
                 </div>
-                <div className="uni-opt">
-                    <div className="uni-img">
-                        <img src={uniImg} alt="university image" />                      
-                    </div>
-
-                    <div className="uni-side">
-                        <h1>The Australian National University (ANU)</h1>
-                        <p>Canberra, Autralian Capital Territory</p>
-                        <div className="apply">
-                            <button>Apply</button>
-                            <span>View All Programs</span>
-                        </div>
-                    </div>
-                </div>
-                <div className="uni-opt">
-                    <div className="uni-img">
-                        <img src={uniImg} alt="university image" />                      
-                    </div>
-
-                    <div className="uni-side">
-                        <h1>The Australian National University (ANU)</h1>
-                        <p>Canberra, Autralian Capital Territory</p>
-                        <div className="apply">
-                            <button>Apply</button>
-                            <span>View All Programs</span>
-                        </div>
-                    </div>
-                </div>
-                <div className="uni-opt">
-                    <div className="uni-img">
-                        <img src={uniImg} alt="university image" />                      
-                    </div>
-
-                    <div className="uni-side">
-                        <h1>The Australian National University (ANU)</h1>
-                        <p>Canberra, Autralian Capital Territory</p>
-                        <div className="apply">
-                            <button>Apply</button>
-                            <span>View All Programs</span>
-                        </div>
-                    </div>
-                </div>
-                <div className="uni-opt">
-                    <div className="uni-img">
-                        <img src={uniImg} alt="university image" />                      
-                    </div>
-
-                    <div className="uni-side">
-                        <h1>The Australian National University (ANU)</h1>
-                        <p>Canberra, Autralian Capital Territory</p>
-                        <div className="apply">
-                            <button>Apply</button>
-                            <span>View All Programs</span>
-                        </div>
-                    </div>
-                </div>
-                <div className="uni-opt">
-                    <div className="uni-img">
-                        <img src={uniImg} alt="university image" />                      
-                    </div>
-
-                    <div className="uni-side">
-                        <h1>The Australian National University (ANU)</h1>
-                        <p>Canberra, Autralian Capital Territory</p>
-                        <div className="apply">
-                            <button>Apply</button>
-                            <span>View All Programs</span>
-                        </div>
-                    </div>
-                </div>
-
-
             </div>
         </div>
     );

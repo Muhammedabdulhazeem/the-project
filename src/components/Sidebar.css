@@ -1,4 +1,4 @@
-.sidebar {
+.sidebar{
     position: fixed;
     width: 13%;
     height: 100%;
@@ -7,6 +7,10 @@
     display: flex;
     flex-direction: column;
 }
+
+/* .sidebar::-webkit-scrollbar {
+    display: none;
+} */
 
 .d-img {
     height: 20px;
@@ -19,10 +23,10 @@
     margin-left: auto;
 }
 
-.single-opt {
+.single-opt-wrap {
     display: flex;
     justify-content: flex-start;
-    margin: 15px 20px;
+    margin: 0 20px 15px;
 }
 
 .option-wrapper {
@@ -43,8 +47,49 @@
 }
 
 .dash-opts-top {
-    padding-top: 20px;
+    padding-top: 50px;
+    padding-bottom: 80px;
+    /* border: 1px solid red; */
+    height: 335px;
+    overflow-y: auto;
 }
+.dash-opts-top::-webkit-scrollbar {
+    display: none;
+}
+
+/* Drop dowms */
+.prog-opts-wrap {
+    height: 0;
+    overflow: hidden;
+    transition: height 0.4s ease-out;
+
+
+}
+
+.prog-opts {
+    display: flex;
+    padding-bottom: 15px;
+
+    flex-direction: column;
+    gap: 12px;
+
+}
+
+.fade-opt {
+    height: 125px;
+}
+
+
+/* .show-prog {
+    display:;
+} */
+
+.prog-opts span {
+    margin-left: 40%;
+    cursor: pointer;
+    padding: 5px 10px;
+}
+
 
 
 

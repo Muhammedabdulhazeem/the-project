@@ -13,6 +13,8 @@ const UniPage = () => {
     const [eligDrop, setEligDrop] = useState(false)
     const [onUni, setOnUni] = useState(true)
     const [onSpecial, setOnSpecial] = useState(false)
+    const [onExams, setOnExams] = useState(false)
+    const [showFunnel, setShowFunnel] = useState(false)
 
     const handleOnUni = () => {
         setOnSpecial(false)
@@ -24,36 +26,51 @@ const UniPage = () => {
         setOnSpecial(true)
     }
 
+    const sidebarProps = { onUni, onSpecial, handleOnUni, handleOnSpecial }
+
 
     return (
         <section className='unipage'>
             <NavDash />
-            <Sidebar />
+            <Sidebar sidebarProps={sidebarProps} />
             <div className="unipage-main">
                 <div className="main-wrapper">
                     <div className="search">
                         <div className="search-box srch-left">
-                            <p>Search School</p>
+                            <input 
+                                type="text" 
+                                placeholder='Search School'
+                            />
                             <div><span>Search</span></div>
                         </div>
                         <div className="search-right-wrap">
                             <div className="search-box">
-                                <p>Search course to study</p>
+                                <input 
+                                    type="text"
+                                    placeholder='Search course to study'
+                                 />
                                 <div><span>Search</span></div>
                             </div>
                             <div className="vert-line"></div>
-                            <div className="funnel-icon">
+                            <div onClick={() => setShowFunnel(!showFunnel)} className="funnel-icon">
                                 <img src={funnelIcon} alt="funnel-icon" />
                             </div>
                         </div>
                     </div>
 
                     <div className="uni-sp">
-                        <span onClick={handleOnUni}>Universities</span>
-                        <span onClick={handleOnSpecial}>Specialization</span>
+                        <span style={{color: onUni? "#0D2C58" : "#89969F"}} onClick={handleOnUni}>Universities</span>
+                        <span style={{color: onSpecial? "#0D2C58" : "#89969F"}} onClick={handleOnSpecial}>Specialization</span>
                     </div>
                     
                     <div className="main-content">
+                        {showFunnel && (<div className="funnel-drop">
+                            <span>Low Tution Fees</span>
+                            <span>High Tution Fees</span>
+                            <span>Low Application Fees</span>
+                            <span>High Application Fees</span>
+                            <span>School Ranks</span>
+                        </div>)}
                         <div className="filter">
                             <div className="filter-opt">
                                 <div className="filter-opt-wrap">
