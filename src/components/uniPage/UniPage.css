@@ -1,11 +1,8 @@
-.unipage {
+ /* {
     height: 100%;
-}
-
-.unipage img {
-    height: 100%;
-    width: 100%;
-}
+    width: auto;
+    background-color: #7C8999;
+} */
 
 .unipage-main {
     padding-top: 40px;
@@ -16,6 +13,11 @@
     justify-content: center;
     align-items: center;
     background-color: #ffffff;
+}
+
+.unipage-main img {
+    height: 100%;
+    width: 100%;
 }
 
 .unipage-main .main-wrapper {
@@ -71,7 +73,7 @@
     background-color: #EFF8FF;
 }
 
-.unipage .vert-line {
+.vert-line {
     width: 3px;
     height: 30.5px;
     margin-left: 10px;
@@ -84,7 +86,7 @@
     margin-left: 21px;
 }
 
-.unipage .uni-sp {
+.uni-sp {
     display: flex;
     justify-content: center;
     color: #fff;
@@ -95,11 +97,11 @@
     color: black;
 }
 
-.unipage .uni-sp span {
+.uni-sp span {
     cursor: pointer;
 }
 
-.unipage .main-content {
+ .main-content {
     display: flex;
 }
 
@@ -134,7 +136,7 @@
     border-radius: 10px;
 }
 
-.unipage .filter .filter-opt-wrap {
+.filter .filter-opt-wrap {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -213,20 +215,20 @@
     margin: 0 16px;
 }
 
-.unipage .fee {
+ .fee {
     width: 90%;
     margin: 0 auto;
     margin-top: 23px;
 }
 
 
-.unipage .fee input {
+.fee input {
     width: 100%;
     /* background-color: #7C8999; */
     background: transparent;
 }
 
-.unipage .fee-range div {
+.fee-range div {
     display: flex;
     justify-content: space-between;
     color: #7C8999;
@@ -263,7 +265,7 @@
 }
 
 /* University Selected */
-.unipage .uni-select {
+.uni-select {
     width: 100%;
     margin-left: 15px;
     /* height: 1580px;

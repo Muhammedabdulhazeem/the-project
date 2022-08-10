@@ -1,0 +1,17 @@
+.inbox-page {
+    padding-top: 55px;
+    width: 87%;
+    margin-left: 13%;
+    /* height: 100%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+}
+
+.inbox-wrapper {
+    margin-top: 50px;
+    /* margin-bottom: 110px; */
+    width: 90%;
+    border: 2px solid black;
+}

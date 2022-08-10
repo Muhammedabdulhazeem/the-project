@@ -1,5 +1,5 @@
-import NavDash from '../../components/NavDash';
-import Sidebar from '../../components/Sidebar';
+import NavDash from '../NavDash';
+import Sidebar from '../Sidebar';
 import './UniPage.css'
 import funnelIcon from '../../assets/icons/funnel-icon.svg'
 import downIcon from '../../assets/icons/black-drop-down.svg'
@@ -8,31 +8,36 @@ import { useState } from 'react';
 import UniSelect from './UniSelect';
 import Specialization from './Specialization';
 
-const UniPage = () => {
+// {sidebarProps:{ onUni, onSpecial, handleOnUni, handleOnSpecial }}
+
+const UniPage = ({sidebarProps:{ onUni, onSpecial, handleOnUni, handleOnSpecial }}) => {
     const [schFilter, setSchFilter] = useState(false)
     const [eligDrop, setEligDrop] = useState(false)
-    const [onUni, setOnUni] = useState(true)
-    const [onSpecial, setOnSpecial] = useState(false)
-    const [onExams, setOnExams] = useState(false)
+    // const [onUni, setOnUni] = useState(true)
+    // const [onSpecial, setOnSpecial] = useState(false)
+    // const [onExams, setOnExams] = useState(false)
     const [showFunnel, setShowFunnel] = useState(false)
 
-    const handleOnUni = () => {
-        setOnSpecial(false)
-        setOnUni(true)
-    } 
+    // const handleOnUni = () => {
+    //     setOnSpecial(false)
+    //     setOnUni(true)
+    // } 
     
-    const handleOnSpecial = () => {
-        setOnUni(false)
-        setOnSpecial(true)
-    }
+    // const handleOnSpecial = () => {
+    //     setOnUni(false)
+    //     setOnSpecial(true)
+    // }
 
-    const sidebarProps = { onUni, onSpecial, handleOnUni, handleOnSpecial }
+    // <NavDash />
+    // <Sidebar sidebarProps={sidebarProps}/>
 
+    // <section className='unipage'>
+    // </section>
+
+    // const sidebarProps = { onUni, onSpecial, handleOnUni, handleOnSpecial }
 
     return (
         <section className='unipage'>
-            <NavDash />
-            <Sidebar sidebarProps={sidebarProps} />
             <div className="unipage-main">
                 <div className="main-wrapper">
                     <div className="search">

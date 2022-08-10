@@ -1,14 +1,5 @@
-.student-dash {
-    /* height: 100%; */
-    /* overflow: hidden; */
-}
 
-.student-dash img {
-    height: 100%;
-    width: 100%;
-}
-
-.student-dash .main-content {
+.student-dash .dash-std-main-content {
     padding-top: 55px;
     width: 87%;
     margin-left: 13%;
@@ -19,12 +10,12 @@
     background-color: #ffffff;
 }
 
-.main-content p, span, h1 {
+.dash-std-main-content p, span, h1 {
     margin: 0;
     padding: 0;
 }
 
-.content-wrapper {
+.dash-std-main-content .content-wrapper {
     /* height: 80%; */
     margin-top: 97px;
     width: 90%;
@@ -43,8 +34,8 @@
 
 
 /* Top left content */
-.top-content .top-left {
-}
+/* .top-content .top-left {
+} */
 
 
 

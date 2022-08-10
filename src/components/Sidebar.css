@@ -12,6 +12,7 @@
     display: none;
 } */
 
+
 .d-img {
     height: 20px;
     width: 20px;
@@ -25,6 +26,7 @@
 
 .single-opt-wrap {
     display: flex;
+    cursor: pointer;
     justify-content: flex-start;
     margin: 0 20px 15px;
 }
@@ -79,10 +81,20 @@
     height: 125px;
 }
 
+.prof-fade-opt {
+    height: 83px;
+}
+
 
 /* .show-prog {
     display:;
 } */
+
+.prog-opts a {
+    /* margin-left: 40%;
+    cursor: pointer;
+    padding: 5px 10px; */
+}
 
 .prog-opts span {
     margin-left: 40%;

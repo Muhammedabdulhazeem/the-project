@@ -10,12 +10,25 @@ import logoutIcon from '../assets/icons/logout-icon.svg'
 import downIcon from '../assets/icons/drop-down-icon.svg'
 import upIcon from '../assets/icons/arrow-up.svg'
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 
-const Sidebar = ({sidebarProps:{ onUni, onSpecial, handleOnUni, handleOnSpecial }}) => {
+const Sidebar = ({sidebarProps:{ onUni, onSpecial, onExams, handleOnExams, handleOnUni, handleOnSpecial }}) => {
     const [showProg, setShowProg] = useState(false)
     const [showAdm, setShowAdm] = useState(false)
     const [showProf, setShowProf] = useState(false)
     const [showWeb, setShowWeb] = useState(false)
+    const [onViewProfile, setOnViewProfile] = useState(false)
+    const [onDocuments, setOnDocuments] = useState(false)
+
+    const handleOnViewProfile = () => {
+        setOnDocuments(false)
+        setOnViewProfile(true)
+    }
+    
+    const handleOnDocuments = () => {
+        setOnViewProfile(false)
+        setOnDocuments(true)
+    }
 
     return(
         <section className="sidebar">
@@ -27,40 +40,58 @@ const Sidebar = ({sidebarProps:{ onUni, onSpecial, handleOnUni, handleOnSpecial 
                             <div className="d-img">
                                 <img src={dashIcon} alt="dash-icon" />
                             </div>
-                            <span>Dashboard</span>    
+                            <Link style={{color: '#fff'}} to='/dashboard'>
+                                <span>
+                                    Dashboard
+                                </span>    
+                            </Link>
                         </div>           
                     </div>
                     <div className="single-opt">
-                        <div className="single-opt-wrap">
+                        <div onClick={() => setShowProg(!showProg)} className="single-opt-wrap">
                             <div className="d-img">
                                 <img src={progIcon} alt="prog-icon" />
                             </div>
                             <span>Program</span>
-                            <div onClick={() => setShowProg(!showProg)} className="down-arrow">
+                            <div className="down-arrow">
                                 <img src={showProg? upIcon : downIcon} alt="down arrow" />
                             </div>
                         </div>
                         <div className={showProg? "prog-opts-wrap fade-opt" : "prog-opts-wrap"}>
                             <div className="prog-opts">
-                                <span style={{
-                                    backgroundColor: onUni? "#EFF8FF" : "#0D2C58", 
-                                    color: onUni? "#0D2C58" : "#fff",
-                                }} onClick={handleOnUni}>University</span>
+                                    <span style={{
+                                        backgroundColor: onUni? "#EFF8FF" : "#0D2C58", 
+                                    }} onClick={handleOnUni}>
+                                        <Link style={{color: onUni? "#0D2C58" : "#fff",}} to='/dashboard/unipage'>
+                                        University
+                                        </Link>
+                                    </span>
                                 <span style={{
                                     backgroundColor: onSpecial? "#EFF8FF" : "#0D2C58", 
                                     color: onSpecial? "#0D2C58" : "#fff",
-                                }} onClick={handleOnSpecial}>Specialization</span>
-                                <span>Exams</span>
+                                }} onClick={handleOnSpecial}>
+                                    <Link style={{color: onSpecial? "#0D2C58" : "#fff"}} to='/dashboard/unipage'>
+                                        Specialization
+                                    </Link>
+                                </span>
+                                <span style={{
+                                    backgroundColor: onExams? "#EFF8FF" : "#0D2C58", 
+                                    color: onExams? "#0D2C58" : "#fff",
+                                }} onClick={handleOnExams}>
+                                     <Link style={{color: onExams? "#0D2C58" : "#fff"}} to='/dashboard/exams'>
+                                        Exams
+                                    </Link>
+                                </span>
                             </div>
                         </div>
                     </div>
                     <div className="single-opt">
-                        <div className="single-opt-wrap">
+                        <div onClick={() => setShowAdm(!showAdm)} className="single-opt-wrap">
                             <div className="d-img">
                                 <img src={adIcon} alt="admission-icon" />
                             </div>
                             <span>Admission</span>
-                            <div onClick={() => setShowAdm(!showAdm)} className="down-arrow">
+                            <div className="down-arrow">
                                 <img src={showAdm? upIcon : downIcon} alt="down arrow" />
                             </div>
                         </div>
@@ -70,7 +101,7 @@ const Sidebar = ({sidebarProps:{ onUni, onSpecial, handleOnUni, handleOnSpecial 
                                 <span style={{
                                     backgroundColor: onUni? "#EFF8FF" : "#0D2C58", 
                                     color: onUni? "#0D2C58" : "#fff",
-                                }} onClick={handleOnUni}>University</span>
+                                }} onClick={handleOnUni}> University</span>
                                 <span style={{
                                     backgroundColor: onSpecial? "#EFF8FF" : "#0D2C58", 
                                     color: onSpecial? "#0D2C58" : "#fff",
@@ -80,27 +111,34 @@ const Sidebar = ({sidebarProps:{ onUni, onSpecial, handleOnUni, handleOnSpecial 
                         </div>
                     </div>
                     <div className="single-opt">
-                        <div className="single-opt-wrap">
+                        <div onClick={() => setShowProf(!showProf)} className="single-opt-wrap">
                             <div className="d-img">
                                 <img src={profIcon} alt="profile icon" />
                             </div>
                             <span>Profile</span>
-                            <div onClick={() => setShowProf(!showProf)} className="down-arrow">
+                            <div className="down-arrow">
                                 <img src={showProf? upIcon : downIcon} alt="down arrow" />
                             </div>
                         </div>
 
-                        <div className={showProf? "prog-opts-wrap fade-opt" : "prog-opts-wrap"}>
+                        <div className={showProf? "prog-opts-wrap prof-fade-opt" : "prog-opts-wrap"}>
                             <div className="prog-opts">
                                 <span style={{
-                                    backgroundColor: onUni? "#EFF8FF" : "#0D2C58", 
-                                    color: onUni? "#0D2C58" : "#fff",
-                                }} onClick={handleOnUni}>University</span>
+                                    backgroundColor: onViewProfile? "#EFF8FF" : "#0D2C58", 
+                                    color: onViewProfile? "#0D2C58" : "#fff",
+                                }} onClick={handleOnViewProfile}>
+                                    <Link style={{color: onViewProfile? "#0D2C58" : "#fff"}} to='/dashboard/profile'>
+                                        View Profile
+                                    </Link>
+                                </span>
                                 <span style={{
-                                    backgroundColor: onSpecial? "#EFF8FF" : "#0D2C58", 
-                                    color: onSpecial? "#0D2C58" : "#fff",
-                                }} onClick={handleOnSpecial}>Specialization</span>
-                                <span>Exams</span>
+                                    backgroundColor: onDocuments? "#EFF8FF" : "#0D2C58", 
+                                    color: onDocuments? "#0D2C58" : "#fff",
+                                }} onClick={handleOnDocuments}>
+                                    <Link style={{color: onDocuments? "#0D2C58" : "#fff"}} to='/dashboard/profile/documents'>
+                                        Documents
+                                    </Link>
+                                </span>
                             </div>
                         </div>
                     </div>
@@ -109,16 +147,18 @@ const Sidebar = ({sidebarProps:{ onUni, onSpecial, handleOnUni, handleOnSpecial 
                             <div className="d-img">
                                 <img src={inboxIcon} alt="inbox-icon" />
                             </div>
-                            <span>Inbox</span>
+                            <Link style={{color: '#fff'}} to='/dashboard/inbox'>
+                                <span>Inbox</span>
+                            </Link>
                         </div>
                     </div>
-                    <div className="single-opt">
-                        <div className="single-opt-wrap">
+                    <div  className="single-opt">
+                        <div onClick={() => setShowWeb(!showWeb)} className="single-opt-wrap">
                             <div className="d-img">
                                 <img src={webinarIcon} alt="webinar-icon" />
                             </div>
                             <span>Webinar</span>
-                            <div onClick={() => setShowWeb(!showWeb)} className="down-arrow">
+                            <div className="down-arrow">
                                 <img src={showWeb? upIcon : downIcon} alt="down arrow" />
                             </div>
                         </div>

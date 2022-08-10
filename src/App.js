@@ -1,18 +1,19 @@
-import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
 import PhoneCode from './components/PhoneCode';
-import StudentDashboard from './components/StudentDashboard';
-import Dashboard from './pages/Dashboard/Dashboard';
 import Signup from './pages/signup/Signup';
-import UniPage from './pages/uniPage/UniPage';
+import StudentDashboard from './pages/studentDashboard/StudentDashboard';
+import UniPage from './components/uniPage/UniPage';
 
 function App() {
   return (
     <BrowserRouter>
       <div className="App">
-        {/* <Signup /> */}
-        {/* <StudentDashboard /> */}
-        <UniPage />
+        <Routes>
+          <Route path='/' element={<Signup />}/>
+          <Route path='/dashboard/*' element={<StudentDashboard />}/>
+        </Routes>
+        {/* <UniPage /> */}
         {/* <Dashboard /> */}
       </div>
     </BrowserRouter>
@@ -20,3 +21,4 @@ function App() {
 }
 
 export default App;
+
