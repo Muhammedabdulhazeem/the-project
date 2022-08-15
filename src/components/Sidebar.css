@@ -12,6 +12,11 @@
     display: none;
 } */
 
+.sidebar a {
+    width: 100%;
+    display: flex;
+}
+
 
 .d-img {
     height: 20px;
@@ -48,6 +53,12 @@
     align-items: center;
 }
 
+.edu span {
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 24px;
+}
+
 .dash-opts-top {
     padding-top: 50px;
     padding-bottom: 80px;
@@ -70,8 +81,14 @@
 
 .prog-opts {
     display: flex;
-    padding-bottom: 15px;
+    justify-content: flex-end;
+}
 
+.prog-opts div {
+    display: flex;
+    padding-bottom: 15px;
+    align-items: flex-start;
+    width: fit-content;
     flex-direction: column;
     gap: 12px;
 
@@ -97,9 +114,10 @@
 }
 
 .prog-opts span {
-    margin-left: 40%;
+    /* margin-left: 40%; */
     cursor: pointer;
     padding: 5px 10px;
+    width: 100%;
 }
 
 

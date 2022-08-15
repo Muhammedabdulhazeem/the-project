@@ -8,6 +8,8 @@ import UniPage from '../../components/uniPage/UniPage';
 import Exams from '../../components/examComp/Exams';
 import Profile from '../../components/profile/Profile';
 import Inbox from '../../components/inbox/Inbox';
+import AdmissionHome from '../../components/admission/AdmissionHome';
+import Webinar from '../../components/webinar/Webinar';
 
 const StudentDashboard = () => {
     const [onUni, setOnUni] = useState(false)
@@ -42,8 +44,10 @@ const StudentDashboard = () => {
                 <Route path='' element={ <Dashboard /> }/>      
                 <Route path='unipage' element={ <UniPage sidebarProps={sidebarProps} /> }/>      
                 <Route path='exams/*' element={ <Exams /> }/>    
+                <Route path='admission/*' element={ <AdmissionHome /> }/>    
                 <Route path='profile/*' element={ <Profile /> } />  
                 <Route path='inbox' element={ <Inbox /> }/>
+                <Route path='webinar/*' element={ <Webinar /> }/>
             </Routes>
         </section>
     );

@@ -38,7 +38,7 @@ const UniSelect = () => {
 
                         <div className="uni-side">
                             <h1>The Nigerian National University (ANU)</h1>
-                            <p>Canberra, Autralian Capital Territory</p>
+                            <p>Canberra, Australian Capital Territory</p>
                             <div className="apply">
                                 <button onClick={handleApply}>Apply</button>
                                 <span>View All Programs</span>
@@ -52,7 +52,7 @@ const UniSelect = () => {
 
                         <div className="uni-side">
                             <h1>The Australian National University (ANU)</h1>
-                            <p>Canberra, Autralian Capital Territory</p>
+                            <p>Canberra, Australian Capital Territory</p>
                             <div className="apply">
                                 <button onClick={handleApply}>Apply</button>
                                 <span>View All Programs</span>
@@ -66,7 +66,7 @@ const UniSelect = () => {
 
                         <div className="uni-side">
                             <h1>The Australian National University (ANU)</h1>
-                            <p>Canberra, Autralian Capital Territory</p>
+                            <p>Canberra, Australian Capital Territory</p>
                             <div className="apply">
                                 <button onClick={handleApply}>Apply</button>
                                 <span>View All Programs</span>
@@ -80,7 +80,7 @@ const UniSelect = () => {
 
                         <div className="uni-side">
                             <h1>The Australian National University (ANU)</h1>
-                            <p>Canberra, Autralian Capital Territory</p>
+                            <p>Canberra, Australian Capital Territory</p>
                             <div className="apply">
                                 <button onClick={handleApply}>Apply</button>
                                 <span>View All Programs</span>
@@ -94,7 +94,7 @@ const UniSelect = () => {
 
                         <div className="uni-side">
                             <h1>The Australian National University (ANU)</h1>
-                            <p>Canberra, Autralian Capital Territory</p>
+                            <p>Canberra, Australian Capital Territory</p>
                             <div className="apply">
                                 <button onClick={handleApply}>Apply</button>
                                 <span>View All Programs</span>
@@ -107,7 +107,7 @@ const UniSelect = () => {
 
                         <div className="uni-side">
                             <h1>The Australian National University (ANU)</h1>
-                            <p>Canberra, Autralian Capital Territory</p>
+                            <p>Canberra, Australian Capital Territory</p>
                             <div className="apply">
                                 <button onClick={handleApply}>Apply</button>
                                 <span>View All Programs</span>
@@ -120,7 +120,7 @@ const UniSelect = () => {
 
                         <div className="uni-side">
                             <h1>The Australian National University (ANU)</h1>
-                            <p>Canberra, Autralian Capital Territory</p>
+                            <p>Canberra, Australian Capital Territory</p>
                             <div className="apply">
                                 <button onClick={handleApply}>Apply</button>
                                 <span>View All Programs</span>
@@ -134,7 +134,7 @@ const UniSelect = () => {
 
                         <div className="uni-side">
                             <h1>The Australian National University (ANU)</h1>
-                            <p>Canberra, Autralian Capital Territory</p>
+                            <p>Canberra, Australian Capital Territory</p>
                             <div className="apply">
                                 <button onClick={handleApply}>Apply</button>
                                 <span>View All Programs</span>
@@ -148,7 +148,7 @@ const UniSelect = () => {
 
                         <div className="uni-side">
                             <h1>The Australian National University (ANU)</h1>
-                            <p>Canberra, Autralian Capital Territory</p>
+                            <p>Canberra, Australian Capital Territory</p>
                             <div className="apply">
                                 <button onClick={handleApply}>Apply</button>
                                 <span>View All Programs</span>
@@ -162,7 +162,7 @@ const UniSelect = () => {
 
                         <div className="uni-side">
                             <h1>The Australian National University (ANU)</h1>
-                            <p>Canberra, Autralian Capital Territory</p>
+                            <p>Canberra, Australian Capital Territory</p>
                             <div className="apply">
                                 <button onClick={handleApply}>Apply</button>
                                 <span>View All Programs</span>
@@ -176,7 +176,7 @@ const UniSelect = () => {
 
                         <div className="uni-side">
                             <h1>The Australian National University (ANU)</h1>
-                            <p>Canberra, Autralian Capital Territory</p>
+                            <p>Canberra, Australian Capital Territory</p>
                             <div className="apply">
                                 <button onClick={handleApply}>Apply</button>
                                 <span>View All Programs</span>

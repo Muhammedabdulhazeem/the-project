@@ -19,7 +19,7 @@ const Specialization = () => {
 
                         <div className="uni-side">
                             <h1>Canadian University (CU)</h1>
-                            <p>Canberra, Autralian Capital Territory</p>
+                            <p>Canberra, Australian Capital Territory</p>
                             <div className="apply">
                                 <button>Apply</button>
                                 <span>View All Programs</span>
@@ -33,7 +33,7 @@ const Specialization = () => {
 
                         <div className="uni-side">
                             <h1>Canadian University (CU)</h1>
-                            <p>Canberra, Autralian Capital Territory</p>
+                            <p>Canberra, Australian Capital Territory</p>
                             <div className="apply">
                                 <button>Apply</button>
                                 <span>View All Programs</span>
@@ -47,7 +47,7 @@ const Specialization = () => {
 
                         <div className="uni-side">
                             <h1>Canadian University (CU)</h1>
-                            <p>Canberra, Autralian Capital Territory</p>
+                            <p>Canberra, Australian Capital Territory</p>
                             <div className="apply">
                                 <button>Apply</button>
                                 <span>View All Programs</span>
@@ -61,7 +61,7 @@ const Specialization = () => {
 
                         <div className="uni-side">
                             <h1>Canadian University (CU)</h1>
-                            <p>Canberra, Autralian Capital Territory</p>
+                            <p>Canberra, Australian Capital Territory</p>
                             <div className="apply">
                                 <button>Apply</button>
                                 <span>View All Programs</span>
@@ -75,7 +75,7 @@ const Specialization = () => {
 
                         <div className="uni-side">
                             <h1>Canadian University (CU)</h1>
-                            <p>Canberra, Autralian Capital Territory</p>
+                            <p>Canberra, Australian Capital Territory</p>
                             <div className="apply">
                                 <button>Apply</button>
                                 <span>View All Programs</span>
@@ -89,7 +89,7 @@ const Specialization = () => {
 
                         <div className="uni-side">
                             <h1>Canadian University (CU)</h1>
-                            <p>Canberra, Autralian Capital Territory</p>
+                            <p>Canberra, Australian Capital Territory</p>
                             <div className="apply">
                                 <button>Apply</button>
                                 <span>View All Programs</span>
@@ -103,7 +103,7 @@ const Specialization = () => {
 
                         <div className="uni-side">
                             <h1>Canadian University (CU)</h1>
-                            <p>Canberra, Autralian Capital Territory</p>
+                            <p>Canberra, Australian Capital Territory</p>
                             <div className="apply">
                                 <button>Apply</button>
                                 <span>View All Programs</span>
@@ -117,7 +117,7 @@ const Specialization = () => {
 
                         <div className="uni-side">
                             <h1>Canadian University (CU)</h1>
-                            <p>Canberra, Autralian Capital Territory</p>
+                            <p>Canberra, Australian Capital Territory</p>
                             <div className="apply">
                                 <button>Apply</button>
                                 <span>View All Programs</span>
@@ -131,7 +131,7 @@ const Specialization = () => {
 
                         <div className="uni-side">
                             <h1>Canadian University (CU)</h1>
-                            <p>Canberra, Autralian Capital Territory</p>
+                            <p>Canberra, Australian Capital Territory</p>
                             <div className="apply">
                                 <button>Apply</button>
                                 <span>View All Programs</span>
@@ -145,7 +145,7 @@ const Specialization = () => {
 
                         <div className="uni-side">
                             <h1>Canadian University (CU)</h1>
-                            <p>Canberra, Autralian Capital Territory</p>
+                            <p>Canberra, Australian Capital Territory</p>
                             <div className="apply">
                                 <button>Apply</button>
                                 <span>View All Programs</span>

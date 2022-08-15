@@ -1,0 +1,60 @@
+.upcoming-web {
+    margin-top: 65px;
+    width: 100%;
+    border: 2px solid black;
+}
+
+.upcoming-web .for-v{
+    border-radius: 8px;
+    height: 163px;
+}
+
+.upcoming-web .v-card {
+    width: 346px;
+    height: 375px;
+    border: 1px solid black;
+}
+
+.upcoming-web h3 {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.upcoming-web .up-v-top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.upcoming-web .up-v-top:nth-of-type(1) {
+    margin-bottom: 44px;
+}
+
+.upcoming-web .up-v-wrap h2 {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #0D2C58;
+}
+
+.upcoming-web .up-v-wrap p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #9A9A9A;
+}
+
+.upcoming-web .up-v-wrap button {
+    width: 126px;
+    height: 44px;
+    background: #0D2C58;
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    border: none;
+    color: #FFFFFF;
+}
