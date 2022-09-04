@@ -2,8 +2,9 @@ import './UniSelect.css'
 import pointer from '../../assets/images/pointer.png'
 import uniImg from '../../assets/images/uni-img.png'
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 
-const UniSelect = () => {
+const UniSelect = ({setShowNavs}) => {
     const [onApply, setOnApply] = useState(false)
 
     const handleApply = () => {
@@ -11,7 +12,7 @@ const UniSelect = () => {
     }
 
     const handleComplete = () => {
-        setOnApply(false)
+        setShowNavs(false)
     }
 
     return (
@@ -27,8 +28,9 @@ const UniSelect = () => {
                             <h2>We know you're eager to start your career</h2>
                             <p>Please complete your profile to start your</p>
                             <p>dream career</p>
-
-                            <button onClick={handleComplete}>Complete Profile</button>
+                            <Link to="/dashboard/personal/">
+                                <button onClick={handleComplete}>Complete Profile</button>
+                            </Link>
                         </div>
                     </div>)}
                     <div className="uni-opt">

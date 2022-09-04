@@ -1,7 +1,69 @@
 .upcoming-web {
     margin-top: 65px;
     width: 100%;
-    border: 2px solid black;
+    z-index: 1;
+}
+
+/* .upcoming-web video {
+    z-index: 1;
+} */
+
+.upcoming-web .pls-complete {
+    position: absolute;
+    display: flex;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.25);
+    /* Note: backdrop-filter has minimal browser support */
+    backdrop-filter: blur(11px);
+}
+
+.upcoming-web .enroll {
+    width: 665px;
+    height: 238px;
+    position: absolute;
+    top: 20%;
+    /* transform: translateY(-50%); */
+    transform: translateX(-50%);
+    left: 50%;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #FFFFFF;
+    border-radius: 10px;
+}
+
+.upcoming-web .enroll p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 0.05em;
+}
+
+.upcoming-web .enroll button {
+    width: 392px;
+    height: 58px;
+    border: none;
+    background: #0D2C58;
+    border-radius: 10px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+}
+
+.upcoming-web .up-v-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 44px;
+    /* column-gap: 71px; */
 }
 
 .upcoming-web .for-v{
@@ -12,7 +74,6 @@
 .upcoming-web .v-card {
     width: 346px;
     height: 375px;
-    border: 1px solid black;
 }
 
 .upcoming-web h3 {

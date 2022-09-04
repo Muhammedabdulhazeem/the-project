@@ -7,7 +7,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: red;
+    background-color: #ffffff;
 }
 
 .webinar-wrapper {
@@ -22,12 +22,15 @@
 
 .webinar-wrapper .first-nav {
     display: flex;
+    position: relative;
     border-bottom: 1px solid black;
     column-gap: 39px;
 }
 
 .webinar-wrapper .first-nav a {
     color: black;
+    position: inherit;
+    bottom: -1px;
 }
 
 .webinar-wrapper .first-nav span {
@@ -66,4 +69,62 @@
     background-color: #0D2C58;
     color: #fff;
 }
+
+.webinar .paginate {
+    display: flex;
+    justify-content: center;
+}
+
+.webinar .paginate .pagination-btns {
+    display: flex;
+    height: 40px;
+    padding: 0 20px;
+    list-style-type: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.webinar .paginate .pagination-btns li{
+    padding: 8px;
+    margin: 7px;
+    min-height: 20px;
+    min-width: 20px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #C4C4C4;
+    color: #fff;
+    cursor: pointer;
+}
+
+.webinar .paginate .pagination-btns a {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+}
+
+.webinar .paginate .pagination-btns li:hover {
+    background-color: black;
+    padding: 13px;
+    /* transform: scale(1); */
+    /* height: 40px;
+    width: 40px; */
+}
+
+.webinar .paginate .active-btn {
+    background-color: black;
+    padding: 13px;
+    /* height: 40px;
+    width: 40px; */
+}
+
+/* .webinar .paginate .previous {
+    width: 100%;
+    height: 100%;
+    color: black;
+    background-color: transparent !important;
+} */
+
+
 

@@ -10,31 +10,21 @@ import Specialization from './Specialization';
 
 // {sidebarProps:{ onUni, onSpecial, handleOnUni, handleOnSpecial }}
 
-const UniPage = ({sidebarProps:{ onUni, onSpecial, handleOnUni, handleOnSpecial }}) => {
+const UniPage = ({sidebarProps:{ onUni, onSpecial, handleOnUni, handleOnSpecial }, setShowNavs}) => {
     const [schFilter, setSchFilter] = useState(false)
     const [eligDrop, setEligDrop] = useState(false)
-    // const [onUni, setOnUni] = useState(true)
-    // const [onSpecial, setOnSpecial] = useState(false)
-    // const [onExams, setOnExams] = useState(false)
     const [showFunnel, setShowFunnel] = useState(false)
 
-    // const handleOnUni = () => {
-    //     setOnSpecial(false)
-    //     setOnUni(true)
-    // } 
+    const handleSchFilter = () => {
+        setEligDrop(false)
+        setSchFilter(!schFilter)
+    }
     
-    // const handleOnSpecial = () => {
-    //     setOnUni(false)
-    //     setOnSpecial(true)
-    // }
+    const handleEligDrop = () => {
+        setSchFilter(false)
+        setEligDrop(!eligDrop)
+    }
 
-    // <NavDash />
-    // <Sidebar sidebarProps={sidebarProps}/>
-
-    // <section className='unipage'>
-    // </section>
-
-    // const sidebarProps = { onUni, onSpecial, handleOnUni, handleOnSpecial }
 
     return (
         <section className='unipage'>
@@ -78,9 +68,9 @@ const UniPage = ({sidebarProps:{ onUni, onSpecial, handleOnUni, handleOnSpecial 
                         </div>)}
                         <div className="filter">
                             <div className="filter-opt">
-                                <div className="filter-opt-wrap">
+                                <div className="filter-opt-wrap" onClick={handleSchFilter}>
                                     <span>School Filter</span>
-                                    <div className="down-icon" onClick={() => setSchFilter(!schFilter)}>
+                                    <div className="down-icon">
                                         <img src={downIcon} alt="down-icon" />
                                     </div>
                                 </div>
@@ -199,10 +189,10 @@ const UniPage = ({sidebarProps:{ onUni, onSpecial, handleOnUni, handleOnSpecial 
                                     <button className="apply-filter">Apply Filter</button>
                                 </div>
                             </div>
-                            <div className="filter-opt">
+                            <div className="filter-opt" onClick={handleEligDrop}>
                                 <div className="filter-opt-wrap">
                                     <span>Eligibility</span>
-                                    <div className="down-icon" onClick={() => setEligDrop(!eligDrop)}>
+                                    <div className="down-icon">
                                         <img src={downIcon} alt="down-icon" />
                                     </div>
                                 </div>
@@ -290,7 +280,7 @@ const UniPage = ({sidebarProps:{ onUni, onSpecial, handleOnUni, handleOnSpecial 
                         </div>
                         
                         <div className="uni-select">
-                            {onUni && <UniSelect />}
+                            {onUni && <UniSelect setShowNavs={setShowNavs}/>}
                             {onSpecial && <Specialization /> }
                         </div>
                     </div>

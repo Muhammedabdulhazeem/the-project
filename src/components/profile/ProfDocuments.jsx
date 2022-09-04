@@ -1,6 +1,7 @@
 import './ProfDocuments.css'
 import progBar from '../../assets/icons/prog-bar.svg'
 import uploadIcon from '../../assets/icons/upload-icon.svg'
+import { Link } from 'react-router-dom';
 
 const ProfDocuments = () => {
     return (
@@ -130,6 +131,85 @@ const ProfDocuments = () => {
                         <span className='format'>Format Accepted. Pdf, Doc, Docx</span>
                     </div>
                 </div>
+                <div className="single-cert-wrap">
+                    <div className="single-cert">
+                        <span>Post-Graduation mark sheet</span>
+                        <div className="upload-cert">
+                            <label>
+                                <span>Upload Document</span>
+                                <input type="file"/>
+                            </label>
+                        </div>
+                        <span className='format'>Format Accepted. Pdf, Doc, Docx</span>
+                    </div>
+                </div>
+                <div className="single-cert-wrap">
+                    <div className="single-cert">
+                        <span>Post-Graduation Degree</span>
+                        <div className="upload-cert">
+                            <label>
+                                <span>Upload Document</span>
+                                <input type="file"/>
+                            </label>
+                        </div>
+                        <span className='format'>Format Accepted. Pdf, Doc, Docx</span>
+                    </div>
+                </div>
+                <div className="single-cert-wrap">
+                    <div className="single-cert">
+                        <span>IELTS/TOEFL/PTE/DUOLINGO (Academic)</span>
+                        <div className="upload-cert">
+                            <label>
+                                <span>Upload Document</span>
+                                <input type="file"/>
+                            </label>
+                        </div>
+                        <span className='format'>Format Accepted. Pdf, Doc, Docx</span>
+                    </div>
+                </div>
+                <div className="single-cert-wrap">
+                    <div className="single-cert">
+                        <span>Statement of Purpose (SOP)</span>
+                        <div className="upload-cert">
+                            <label>
+                                <span>Upload Document</span>
+                                <input type="file"/>
+                            </label>
+                        </div>
+                        <span className='format'>Format Accepted. Pdf, Doc, Docx</span>
+                    </div>
+                </div>
+                <div className="single-cert-wrap">
+                    <div className="single-cert">
+                        <span>Letter of Recommendations (LOR)</span>
+                        <div className="upload-cert">
+                            <label>
+                                <span>Upload Document</span>
+                                <input type="file"/>
+                            </label>
+                        </div>
+                        <span className='format'>Format Accepted. Pdf, Doc, Docx</span>
+                    </div>
+                </div>
+                <div className="single-cert-wrap">
+                    <div className="single-cert">
+                        <span>Work experience certificates</span>
+                        <div className="upload-cert">
+                            <label>
+                                <span>Upload Document</span>
+                                <input type="file"/>
+                            </label>
+                        </div>
+                        <span className='format'>Format Accepted. Pdf, Doc, Docx</span>
+                    </div>
+                </div>
+            </div>
+
+            <div className="addit-wrap">
+                <div className='addit-doc'>
+                    <span>Additional Document</span>
+                    <span>+</span>
+                </div>
             </div>
 
             <div className="school-cert">
@@ -151,6 +231,9 @@ const ProfDocuments = () => {
                     </div>
                 </div>
             </div>
+            <Link to='/dashboard/admission/application-status/payment'>
+                <button className="save">Save Changes</button>
+            </Link>
         </div>
     );
 }

@@ -3,12 +3,83 @@ import './Dashboard.css'
 import progBar from '../../assets/images/progress-bar.png'
 import hrLine from '../../assets/images/hr-line.png'
 import singlePerson from '../../assets/images/single-person.png'
+import progTrack from '../../assets/icons/prog-track.svg'
 import gather from '../../assets/icons/gather.svg'
+import sep from '../../assets/icons/sep.svg'
 import dropDown from '../../assets/icons/black-drop-down.svg'
+import { Link } from 'react-router-dom'
 
 const Dashboard = () => {
     return (
         <div className="dash-std-main-content">
+            <div className="prog-track">
+                <div className="step">
+                    <div><span>1</span></div>
+                    <span style={{width: "75px"}}>Profile completion</span>
+                </div>
+                <div className="sep">
+                    <img src={sep} alt="separate" />
+                </div>
+                <div className="step">
+                    <div><span>2</span></div>
+                    <span>Document <br /> selected</span>
+                </div>
+                <div className="sep">
+                    <img src={sep} alt="separate" />
+                </div>
+                <div className="step">
+                    <div><span>3</span></div>
+                    <span>Pendencies <br /> rejection</span>
+                </div>
+                <div className="sep">
+                    <img src={sep} alt="separate" />
+                </div>
+                <div className="step">
+                    <div><span>4</span></div>
+                    <span>Conditional <br />offer letter</span>
+                </div>
+                <div className="sep">
+                    <img src={sep} alt="separate" />
+                </div>
+                <div className="step">
+                    <div><span>5</span></div>
+                    <span style={{width: "70px"}}>Completed <br /> document seleted</span>
+                </div>
+                <div className="sep">
+                    <img src={sep} alt="separate" />
+                </div>
+                <div className="step">
+                    <div><span>6</span></div>
+                    <span style={{width: "45px"}}>Offer letter</span>
+                </div>
+                <div className="sep">
+                    <img src={sep} alt="separate" />
+                </div>
+                <div className="step">
+                    <div><span>7</span></div>
+                    <span>COA</span>
+                </div>
+                <div className="sep">
+                    <img src={sep} alt="separate" />
+                </div>
+                <div className="step">
+                    <div><span>8</span></div>
+                    <span style={{width: "35px"}}>Visa file</span>
+                </div>
+                <div className="sep">
+                    <img src={sep} alt="separate" />
+                </div>
+                <div className="step">
+                    <div><span>9</span></div>
+                    <span style={{width: "55px"}}>Visa decision</span>
+                </div>
+            </div>
+
+            <div className="shape">
+                <div></div>
+                <div></div>
+            </div>
+
             <div className="content-wrapper">
                 <div className="top-content">
                     <div className="top-left">
@@ -68,8 +139,9 @@ const Dashboard = () => {
                                     </div>
                                 </div>
                             </div>
-
-                            <button className="eligible">Check Eligibility</button>
+                            <Link to='/dashboard/unipage'>
+                                <button className="eligible">Check Eligibility</button>
+                            </Link>
                         </div>
                     </div>
                     <div className="top-right">
@@ -85,7 +157,9 @@ const Dashboard = () => {
                                     <img src={gather} alt="gather" />
                                 </div>
                                 <p>Join our live webinar section to guide you on your application process</p>
-                                <button>Get Connected</button>
+                                <Link to='/dashboard/webinar/'>
+                                    <button>Get Connected</button>
+                                </Link>
                             </div>
                         </div>
                     </div>

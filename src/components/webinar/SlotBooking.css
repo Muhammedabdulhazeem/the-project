@@ -2,6 +2,7 @@
     /* border: 3px solid black; */
     position: absolute;
     top: 55px;
+    background-color: #FFFFFF;
     right: 0;
     left: 0;
     bottom: 0;
@@ -25,12 +26,16 @@
     border-radius: 10px;
 }
 
+.slot-booking .booking-wrap {
+    position: relative;
+}
+
 .slot-booking .head {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     padding: 26px 23px;
-    height: 90px;
+    height: 100px;
     background: #EFF8FF;
 }
 
@@ -148,7 +153,7 @@
     margin-left: 25px;
 }
 
-.slot-booking .reg span:nth-of-type(1) {
+.slot-booking .reg span:nth-of-type(2) {
     margin-left: 21px;
 }
 
@@ -219,10 +224,11 @@
     right: -7px;
 }
 
-.slot-booking .below-about button:nth-of-type(1) {
+.slot-booking .below-about .btn-one {
     width: 218px;
     height: 67px;
     border: none;
+    cursor: pointer;
     background: #0D2C58;
     border-radius: 12px;
     font-weight: 500;
@@ -231,7 +237,7 @@
     color: #FFFFFF;
 }
 
-.slot-booking .below-about button:nth-of-type(2) {
+.slot-booking .below-about .btn-two {
     width: 262px;
     height: 67px;
     border: none;

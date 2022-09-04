@@ -10,11 +10,13 @@ import Profile from '../../components/profile/Profile';
 import Inbox from '../../components/inbox/Inbox';
 import AdmissionHome from '../../components/admission/AdmissionHome';
 import Webinar from '../../components/webinar/Webinar';
+import PersonalHome from '../../components/personalProfile/PersonalHome';
 
 const StudentDashboard = () => {
     const [onUni, setOnUni] = useState(false)
     const [onSpecial, setOnSpecial] = useState(false)
     const [onExams, setOnExams] = useState(false)
+    const [showNavs, setShowNavs] = useState(true)
 
     const handleOnUni = () => {
         setOnSpecial(false)
@@ -38,16 +40,21 @@ const StudentDashboard = () => {
 
     return (
         <section className="student-dash">
-            <NavDash />
-            <Sidebar sidebarProps={sidebarProps}/>
+                {showNavs && (
+                    <>
+                        <NavDash />
+                        <Sidebar sidebarProps={sidebarProps}/>
+                    </>
+                )}
             <Routes>
                 <Route path='' element={ <Dashboard /> }/>      
-                <Route path='unipage' element={ <UniPage sidebarProps={sidebarProps} /> }/>      
+                <Route path='unipage' element={ <UniPage sidebarProps={sidebarProps} setShowNavs={setShowNavs}/> }/>      
                 <Route path='exams/*' element={ <Exams /> }/>    
                 <Route path='admission/*' element={ <AdmissionHome /> }/>    
                 <Route path='profile/*' element={ <Profile /> } />  
                 <Route path='inbox' element={ <Inbox /> }/>
                 <Route path='webinar/*' element={ <Webinar /> }/>
+                <Route path='personal/*' element={ <PersonalHome setShowNavs={setShowNavs} /> }/>
             </Routes>
         </section>
     );

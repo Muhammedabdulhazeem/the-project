@@ -45,7 +45,7 @@
     background-color: #EFF8FF;
     border-radius: 10px;
     padding-bottom: 23px;
-    margin-bottom: 32px;
+    margin-bottom: 25px;
 }
 
 .prof-doc .school-cert .single-cert-wrap {
@@ -192,5 +192,42 @@
     font-size: 10px;
     line-height: 24px;
     color: #21B573;
+}
+
+.prof-doc .addit-wrap {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 25px;
+}
+
+.prof-doc .addit-doc {
+    width: 280px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+    background: linear-gradient(180deg, #0D2C58 0%, #144286 100%);
+    border-radius: 10px;
+    border: none;
+}
+
+.prof-doc .addit-doc span{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+.prof-doc .save {
+    width: 280px;
+    height: 50px;
+    background: linear-gradient(180deg, #0D2C58 0%, #144286 100%);
+    border-radius: 10px;
+    border: none;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
 }
 

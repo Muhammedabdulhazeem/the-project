@@ -21,6 +21,7 @@ const Sidebar = ({sidebarProps:{ onUni, onSpecial, onExams, handleOnExams, handl
     const [onDocuments, setOnDocuments] = useState(false)
     const [onAppliedAt, setOnAppliedAt] = useState(false)
     const [onAppStatus, setOnAppStatus] = useState(false)
+    const [onWebinar, setOnWebinar] = useState(false)
 
     const handleOnViewProfile = () => {
         setOnDocuments(false)
@@ -74,10 +75,10 @@ const Sidebar = ({sidebarProps:{ onUni, onSpecial, onExams, handleOnExams, handl
 
     const dropList = [ setShowAdm, setShowProf, setShowProg, setShowWeb]
 
-    const closeDrop = (setDrop) => {
+    const closeDrop = (setDrop, Drop) => {
         dropList.forEach(drop => {
             if(setDrop === drop) {
-                setDrop(true)
+                setDrop(!Drop)
             }else {
                 drop(false)
             }
@@ -102,7 +103,7 @@ const Sidebar = ({sidebarProps:{ onUni, onSpecial, onExams, handleOnExams, handl
                         </div>           
                     </div>
                     <div className="single-opt">
-                        <div onClick={() => closeDrop(setShowProg)} className="single-opt-wrap">
+                        <div onClick={() => closeDrop(setShowProg, showProg)} className="single-opt-wrap">
                             <div className="d-img">
                                 <img src={progIcon} alt="prog-icon" />
                             </div>
@@ -142,7 +143,7 @@ const Sidebar = ({sidebarProps:{ onUni, onSpecial, onExams, handleOnExams, handl
                         </div>
                     </div>
                     <div className="single-opt">
-                        <div onClick={() => closeDrop(setShowAdm)} className="single-opt-wrap">
+                        <div onClick={() => closeDrop(setShowAdm, showAdm)} className="single-opt-wrap">
                             <div className="d-img">
                                 <img src={adIcon} alt="admission-icon" />
                             </div>
@@ -174,7 +175,7 @@ const Sidebar = ({sidebarProps:{ onUni, onSpecial, onExams, handleOnExams, handl
                         </div>
                     </div>
                     <div className="single-opt">
-                        <div onClick={() => closeDrop(setShowProf)} className="single-opt-wrap">
+                        <div onClick={() => closeDrop(setShowProf, showProf)} className="single-opt-wrap">
                             <div className="d-img">
                                 <img src={profIcon} alt="profile icon" />
                             </div>
@@ -222,27 +223,26 @@ const Sidebar = ({sidebarProps:{ onUni, onSpecial, onExams, handleOnExams, handl
                             <div className="d-img">
                                 <img src={webinarIcon} alt="webinar-icon" />
                             </div>
-                            <span>Webinar</span>
-                            <div className="down-arrow">
+                            <Link style={{color: '#fff'}} to='/dashboard/webinar'>
+                                <span>Webinar</span>
+                            </Link>
+                            {/* <div className="down-arrow">
                                 <img src={showWeb? upIcon : downIcon} alt="down arrow" />
-                            </div>
+                            </div> */}
                         </div>
 
-                        <div className={showWeb? "prog-opts-wrap fade-opt" : "prog-opts-wrap"}>
+                        {/* <div className={showWeb? "prog-opts-wrap fade-opt" : "prog-opts-wrap"}>
                             <div className="prog-opts">
                                 <div>
-                                    <span style={{
-                                        backgroundColor: onUni? "#EFF8FF" : "#0D2C58", 
-                                        color: onUni? "#0D2C58" : "#fff",
-                                    }} onClick={handleOnUni}>University</span>
-                                    <span style={{
-                                        backgroundColor: onSpecial? "#EFF8FF" : "#0D2C58", 
-                                        color: onSpecial? "#0D2C58" : "#fff",
-                                    }} onClick={handleOnSpecial}>Specialization</span>
-                                    <span>Exams</span>
+                                    <Link style={{color: onWebinar? "#0D2C58" : "#fff"}} to='/dashboard/webinar'>
+                                        <span style={{
+                                            backgroundColor: onWebinar? "#EFF8FF" : "#0D2C58", 
+                                            color: onWebinar? "#0D2C58" : "#fff",
+                                        }} onClick={() => setOnWebinar(true)}>Webinar</span>
+                                    </Link>
                                 </div>
                             </div>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
                 <div className="dash-opts-bottom">
