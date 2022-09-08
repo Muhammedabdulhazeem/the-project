@@ -1,6 +1,8 @@
-/* .personal-profile {
+.personal-profile {
     z-index: 4;
-} */
+    position: relative;
+    background-color: #ffffff;
+}
 
 .personal-profile .logo div {
     width: 46px;

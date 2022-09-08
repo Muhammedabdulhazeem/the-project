@@ -10,7 +10,7 @@ import Specialization from './Specialization';
 
 // {sidebarProps:{ onUni, onSpecial, handleOnUni, handleOnSpecial }}
 
-const UniPage = ({sidebarProps:{ onUni, onSpecial, handleOnUni, handleOnSpecial }, setShowNavs}) => {
+const UniPage = ({sidebarProps:{ onUni, onSpecial, handleOnUni, handleOnSpecial }}) => {
     const [schFilter, setSchFilter] = useState(false)
     const [eligDrop, setEligDrop] = useState(false)
     const [showFunnel, setShowFunnel] = useState(false)
@@ -280,7 +280,7 @@ const UniPage = ({sidebarProps:{ onUni, onSpecial, handleOnUni, handleOnSpecial 
                         </div>
                         
                         <div className="uni-select">
-                            {onUni && <UniSelect setShowNavs={setShowNavs}/>}
+                            {onUni && <UniSelect />}
                             {onSpecial && <Specialization /> }
                         </div>
                     </div>

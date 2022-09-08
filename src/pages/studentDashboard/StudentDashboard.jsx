@@ -16,7 +16,7 @@ const StudentDashboard = () => {
     const [onUni, setOnUni] = useState(false)
     const [onSpecial, setOnSpecial] = useState(false)
     const [onExams, setOnExams] = useState(false)
-    const [showNavs, setShowNavs] = useState(true)
+    // const [showNavs, setShowNavs] = useState(true)
 
     const handleOnUni = () => {
         setOnSpecial(false)
@@ -40,21 +40,18 @@ const StudentDashboard = () => {
 
     return (
         <section className="student-dash">
-                {showNavs && (
-                    <>
-                        <NavDash />
-                        <Sidebar sidebarProps={sidebarProps}/>
-                    </>
-                )}
+            <NavDash />
+            <Sidebar sidebarProps={sidebarProps}/>
+            
             <Routes>
                 <Route path='' element={ <Dashboard /> }/>      
-                <Route path='unipage' element={ <UniPage sidebarProps={sidebarProps} setShowNavs={setShowNavs}/> }/>      
+                <Route path='unipage' element={ <UniPage sidebarProps={sidebarProps} /> }/>      
                 <Route path='exams/*' element={ <Exams /> }/>    
                 <Route path='admission/*' element={ <AdmissionHome /> }/>    
                 <Route path='profile/*' element={ <Profile /> } />  
                 <Route path='inbox' element={ <Inbox /> }/>
                 <Route path='webinar/*' element={ <Webinar /> }/>
-                <Route path='personal/*' element={ <PersonalHome setShowNavs={setShowNavs} /> }/>
+                <Route path='personal/*' element={ <PersonalHome /> }/>
             </Routes>
         </section>
     );

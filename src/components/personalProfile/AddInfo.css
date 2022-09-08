@@ -1,5 +1,4 @@
 .add-info {
-    border: 2px solid black;
 }
 
 .add-info .add-info-wrap {
@@ -8,7 +7,6 @@
     width: 700px;
     position: relative;
     margin: 125px auto 70px;
-    border: 1px solid red;
 }
 
 .add-info .info {

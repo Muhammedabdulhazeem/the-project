@@ -10,7 +10,7 @@ import AddInfo from './AddInfo';
 import PrefCountry from './PrefCountry';
 
 
-const PersonalHome = ({setShowNavs}) => {
+const PersonalHome = () => {
     return (
         <div className="personal-profile">
             <nav>
@@ -54,8 +54,8 @@ const PersonalHome = ({setShowNavs}) => {
             </nav>
 
             <Routes>
-                <Route path='/' element={ <BackgroundInfo setShowNavs={setShowNavs}/> } />
-                <Route path='/add-info' element={ <AddInfo setShowNavs={setShowNavs} /> } />
+                <Route path='/' element={ <BackgroundInfo /> } />
+                <Route path='/add-info' element={ <AddInfo /> } />
                 <Route path='/edu-one' element={ <EducationOne /> } />
                 <Route path='/edu-two' element={ <EducationTwo /> } />
                 <Route path='/edu-three' element={ <EducationThree /> } />
